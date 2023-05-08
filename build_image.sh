@@ -1,0 +1,1 @@
+docker build . -t literature_club_app:1.0.0

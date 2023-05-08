@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:literature_club}
+    username: ${DB_USER:root}
+    password: ${DB_PASSWORD:11111111}
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.yml
+  jpa:
+    hibernate:
+      ddl-auto: none
